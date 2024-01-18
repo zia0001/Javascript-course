@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      /*
+      //An object let us group multiple values and let us use multiple values together
+       const product ={ 
+        name: 'socks',
+        price: 1002
+       };
+       console.log(product);
+       console.log(product.name);
+       console.log(product.price);
+
+       product.name = 'cotton socks'; //changing value inside name property
+       console.log(product);
+
+       product.newProperty = 'color'; // Adding new property in the object
+       console.log(product);
+
+       delete product.newProperty;
+       console.log(product);
+
+       */
+
+       /*
+       const product2={
+        name: 'shirt',
+        'delivery-time': '1 day',
+        rating:{                        // nested object
+          stars: 4,
+          count: 89
+        },
+        fun: function function1(){                // using function inside of an object is called method
+          console.log('function inside object ');
+        }
+       }
+       console.log(product2);
+       console.log(product2['delivery-time']);  //bracket notation let us use properties that normally dont work with dot notation i.e using  "-" in dot notation does not work because compilar take it as a minus sign 
+       console.log(product2.rating.count);
+       console.log(product2.fun);
+       
+       // JSON object: JSON object is just like javascript object but with less featurs, JSON does not support function within object like javascript object and It has Double cotation "".JSON is universal means it can be understood by any language but javascript object only works in javascript
+
+       JSON.stringify(product2);          //converting javascript object into JSON
+       console.log(JSON.stringify(product2));
+
+       JSON.parse(JSON.stringify(product2));  // converting JSON string into javascript object
+       const jsonstring =JSON.stringify(product2)
+       console.log(JSON.parse(jsonstring));
+       */
+
+
+       /*Auto Boxing: Javascript automatically wrap the string in a special object like a box */
+
+       console.log('hello'.length);
+       console.log('hello'.toUpperCase());
+
+
+       
+       /*Objects are refrences*/
+
+       const object1 ={
+        message : 'hello'
+       };
+       const object2 = object1;
+
+       object1.message='Good job!'; //Even though we use "const" for object we can still change values inside the object
+       console.log(object1); 
+       console.log(object2);        //object2 has the same reference as object1
+       
+       
+       /* Destructuring: Easier way to take properties out of an object */
+
+       const object4={
+        message:'Good day!',
+        price: 898
+       };
+       //const message = object4.message; console.log(message)
+
+       const {message,price} = object4;
+       console.log(message);
+       console.log(price);
+
+
+
+       /*shorthand property*/
+
+       const object5={
+        //message:message
+        message,
+        //method: function function1(){
+          //console.log('method');
+        //}
+        method(){
+          console.log('method')
+        }
+       };
+       console.log(object5);
+       object5.method();
+       
+    </script>
+  </body>
+</html>
