@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Head Tails</title>
+    <style></style>
+  </head>
+  <body>
+    <button class="js-headsElement" onclick="
+      headElement();
+      ">heads</button>
+    <button class="js-tails-Element" onclick="
+    tailElement();
+    ">tails</button>
+    
+    <p class="js-choiceElement"></p>
+
+
+
+    
+    <script>
+     
+      function headElement(){
+        document.querySelector('.js-choiceElement').innerHTML ='You chose heads';
+      }
+
+      function tailElement(){
+        document.querySelector('.js-choiceElement').innerHTML = 'You chose tails';
+      }
+    
+    </script>
+  </body>
+</html>

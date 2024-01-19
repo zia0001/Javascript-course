@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+    <style></style>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button class="js-button">second button</button>
+    <script>
+      //document.queryselector(): Let us get any element from the page and put it inside the javascript
+
+      console.log(document.querySelector("button").innerHTML);
+
+      document.querySelector("button").innerHTML = "changed";
+      console.log(document.querySelector("button").innerHTML);
+
+      document.querySelector(".js.button");
+
+      console.log(document.querySelector(".js-button"));
+      console.log(document.querySelector(".js-button").innerHTML);
+
+      const buttonElement =document.querySelector(".js-button");
+      console.log(buttonElement);
+
+      /*
+      //DOM: conrols the behavior of elements on webpage and also Combines Html and javascript together
+      // It gives control of webpage to Javascript
+
+      console.log(document.title);
+      document.title = 'changed';
+
+      console.log(document.body);
+      console.log(typeof document.body);
+      console.log(document.body.innerHTML = '<button>Hello</button>');
+      */
+
+      /*
+      document.body.innerHTML='hello';
+       document.title ='Good job';
+       */
+    </script>
+  </body>
+</html>
